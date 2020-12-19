@@ -1,0 +1,9 @@
+{
+  "name": "matchbook-js",
+  "version": "0.0.1",
+  "description": "A API wrapper for the matchbook.com RESTful API service written in Javascript",
+  "main": "index.js",
+  "repository": "git@github.com:GustavoEdny/matchbook-js.git",
+  "author": "gustavo <gustavoedny@gmail.com>",
+  "license": "MIT"
+}

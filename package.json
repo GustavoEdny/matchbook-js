@@ -1,5 +1,5 @@
 {
-  "name": "matchbook-js",
+  "name": "@gustavoedny/matchbook-js",
   "version": "0.0.1",
   "description": "A API wrapper for the matchbook.com RESTful API service written in Javascript",
   "main": "index.js",

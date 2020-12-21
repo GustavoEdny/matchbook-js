@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "git@github.com:GustavoEdny/matchbook-js.git",
   "author": "gustavo <gustavoedny@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.0"
+  }
 }

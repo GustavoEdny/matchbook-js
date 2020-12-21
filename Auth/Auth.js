@@ -1,21 +1,17 @@
 const RESTClient = require('../RESTClient')
 const RESOURCE = 'bpapi/rest/security/session'
 
-const Auth = {
+class Auth extends RESTClient {
     async login(username, password) {
-        return RESTClient.post(RESOURCE, { username, password })
-    },
+        return this.post(RESOURCE, { username, password })
+    }
 
-    async logout(sessionToken) {
-        return RESTClient.delete(RESOURCE, {
-            headers: { 'session-token': sessionToken }
-        })
-    },
+    async logout() {
+        return this.delete(RESOURCE)
+    }
 
-    async getSession(sessionToken) {
-        return RESTClient.get(RESOURCE, {
-            headers: { 'session-token': sessionToken }
-        })
+    async getSession() {
+        return this.get(RESOURCE)
     }
 }
 

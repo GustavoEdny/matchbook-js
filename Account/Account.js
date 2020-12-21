@@ -1,16 +1,12 @@
 const RESTClient  = require('../RESTClient')
 
-const Account = {
-    async getAccount(sessionToken) {
-        return RESTClient.get('edge/rest/account', {
-            headers: { 'session-token': sessionToken }
-        })
-    },
+class Account extends RESTClient {
+    async getAccount() {
+        return this.get('edge/rest/account')
+    }
 
-    async getBalance(sessionToken) {
-        return RESTClient.get('edge/rest/account/balance', {
-            headers: { 'session-token': sessionToken }
-        })
+    async getBalance() {
+        return this.get('edge/rest/account/balance')
     }
 }
 

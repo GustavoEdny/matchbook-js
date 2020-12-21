@@ -1,6 +1,10 @@
 const RESTClient = require('../RESTClient')
 
 class Events extends RESTClient {
+    static factory(token = '') {
+        return new Events(token = '')
+    }
+
     async getEvents(params = {}) {
         return this.get('edge/rest/events', { params })
     }
